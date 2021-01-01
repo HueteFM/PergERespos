@@ -1,0 +1,22 @@
+{
+  "name": "projetoperguntas",
+  "version": "1.0.0",
+  "description": "projeto para fixar aprendizado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HueteFM/PergERespos.git"
+  },
+  "author": "Huete F. M. Jr.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HueteFM/PergERespos/issues"
+  },
+  "homepage": "https://github.com/HueteFM/PergERespos#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
