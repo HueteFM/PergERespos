@@ -1,25 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Pagina de Perguntas e Respostas</title>
-    
-</head>
+<%- include('partials/head') %>
 
 <body  >
-    <h1 class="container">Olá mundo!</h1>
+    <br>
+    <hr>
+    <h1 class="container d-flex justify-content-center">
+        <a href="./perguntar">
+        Perguntas e Respostas</a></h1>  
+    <hr>
+
+    <h2>Relação de Perguntas</h2>
     
+    <div class="container">
+        
+            <% perguntas.forEach(pergunta => { %>            
+                <div class="card">
+                    <h4>Pergunta: <%= pergunta.titulo %></h3>
+                    <h4>Descrição: <%= pergunta.descricao %></h3>                    
+                </div>
+                <br>                
+            <%})%>
+        </div>       
+    </div>
+
 
     
 </body>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
-<link rel="stylesheet" href="./css/style.css">
-
-</html>
+<%- include('partials/footer') %>
